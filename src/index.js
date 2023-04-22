@@ -1,10 +1,11 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const { generateMarkdown } = require('./utils/generateMarkdown');
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 
 function questions () {
-  return inquirer
-    .prompt([
+  return inquirer.prompt([
       /* Pass your questions in here */
       {
         type: 'input',
@@ -21,11 +22,30 @@ function questions () {
         name: 'githubuser',
         message: 'What is your Github user',
       },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe your project',
+      },
       
 
     ])
     .then((answers) => {
       console.log(answers)
+
+      return generateMarkdown(answers);
+
+
+
+    })
+    .then((data) => {
+      console.log(data);
+      fs.writeFile('../dist/README.md', data,(err)=> {
+        if(err){
+          console.log('error',err); 
+        }
+        console.log('DONE');
+      })
     })
     .catch((error) => {
       if (error.isTtyError) {
@@ -36,6 +56,7 @@ function questions () {
     });
 
 }
+
 
 
 
