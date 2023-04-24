@@ -10,23 +10,52 @@ function questions () {
       {
         type: 'input',
         name: 'project',
-        message: 'What is the name of your project?',
+        message: 'Enter the name of your project?',
       },
       {
         type: 'input',
-        message: 'What is your full name?',
+        message: 'Enter your full name?',
         name: 'name',
       },
       {
         type: 'input',
         name: 'githubuser',
-        message: 'What is your Github user',
+        message: 'Enter your Github user',
       },
       {
         type: 'input',
         name: 'description',
         message: 'Describe your project',
       },
+      {
+      type: 'input',
+      name: 'screenshot',
+      message: 'Add a screenshot URL',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email',
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: 'Select project license',
+        choices: ['GPLv2', 'GPLv3', 'MIT', 'BSD','MIT', 'Apache2.0', 'None'],
+        default: 'MIT'
+      },
+      {
+        type: 'input',
+        name: 'features',
+        message: 'Enter the features your project contains',
+      },
+      {
+        type: 'input',
+        name: 'deployment',
+        message: 'Enter deployment URL',
+      },
+      
+      
       
 
     ])
