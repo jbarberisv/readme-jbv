@@ -1,31 +1,80 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+const { generateMarkdown } = require('./utils/generateMarkdown');
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 
 function questions () {
-  return inquirer
-    .prompt([
+  return inquirer.prompt([
       /* Pass your questions in here */
       {
         type: 'input',
         name: 'project',
-        message: 'What is the name of your project?',
+        message: 'Enter the name of your project?',
       },
       {
         type: 'input',
-        message: 'What is your full name?',
+        message: 'Enter your full name?',
         name: 'name',
       },
       {
         type: 'input',
         name: 'githubuser',
-        message: 'What is your Github user',
+        message: 'Enter your Github user',
       },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe your project',
+      },
+      {
+      type: 'input',
+      name: 'screenshot',
+      message: 'Add a screenshot URL',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email',
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: 'Select project license',
+        choices: ['GPLv2', 'GPLv3', 'MIT', 'BSD','MIT', 'Apache2.0', 'None'],
+        default: 'MIT'
+      },
+      {
+        type: 'input',
+        name: 'features',
+        message: 'Enter the features your project contains',
+      },
+      {
+        type: 'input',
+        name: 'deployment',
+        message: 'Enter deployment URL',
+      },
+      
+      
       
 
     ])
     .then((answers) => {
       console.log(answers)
+
+      return generateMarkdown(answers);
+
+
+
+    })
+    .then((data) => {
+      console.log(data);
+      fs.writeFile('../dist/README.md', data,(err)=> {
+        if(err){
+          console.log('error',err); 
+        }
+        console.log('DONE');
+      })
     })
     .catch((error) => {
       if (error.isTtyError) {
@@ -36,6 +85,7 @@ function questions () {
     });
 
 }
+
 
 
 
