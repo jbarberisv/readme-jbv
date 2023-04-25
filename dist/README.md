@@ -1,19 +1,17 @@
 
   ![alt text](https://img.shields.io/badge/License-MIT-brightgreen)
-  # Readme
+  # readme generator
         
   ## Table of Contents
 
-- [Readme](#readme)
-  - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Screenshot](#screenshot)
-  - [Features and Technology](#features-and-technology)
+  - [Features & Technology](#features-and-technology)
   - [Deployment](#deployment)
   - [Credits](#credits)
 
   ## Description
-  this is a Readme generator using node.js and inquirer, featuring table of content, description,project name,github username,screen shot,email,license,features and credit.
+  this is a readme generator using node.js and inquirer
 
   ## Screenshot
 
@@ -21,13 +19,13 @@
   
 
   ## Features and Technology
-  Node.js, Inquirer,FS to generate readme file into the dist folder.
+  node.js, inquirer & Fs
  
   ## Deployment
-  [Click Here](not done yet)
+  [Click Here](https://jbarberisv.github.io/readme-jbv/)
 
   
   
   ## Credits
   
-  [Joaquin Barberis](https://github.com/jbarberisv)
+  [joaquin barberis](https://github.com/jbarberisv)
