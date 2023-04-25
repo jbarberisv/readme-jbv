@@ -10,7 +10,7 @@
   - [Credits](#credits)
 
   ## Description
-  this is a Readme generator using node.js and inquierer, featuring table of content, descriptition,project name,github username,screen shot,email,license,features and credit.
+  this is a Readme generator using node.js and inquierer, featuring table of content, descriptition, project name, github username, screen shot, email, license, features and credit.
 
   ## Screenshot
 
