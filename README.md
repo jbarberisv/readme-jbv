@@ -7,7 +7,6 @@
   - [Description](#description)
   - [Screenshot](#screenshot)
   - [Features & Technology](#features-and-technology)
-  - [Deployment](#deployment)
   - [Credits](#credits)
 
   ## Description
