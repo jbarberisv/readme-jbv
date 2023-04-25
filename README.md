@@ -16,9 +16,9 @@
 
   ![alt screenshot](https://github.com/jbarberisv/readme-jbv/blob/main/assets/images/screenshot-Read.png?raw=true)
   
-  ## Wall through video
+  ## Walk Through Video
   
-  [video](https://drive.google.com/file/d/1VfWWMCGRWavt0T4PJCbFVQPtQJMZtX8y/view)
+  [Video](https://drive.google.com/file/d/1VfWWMCGRWavt0T4PJCbFVQPtQJMZtX8y/view)
   
 
   ## Features and Technology
