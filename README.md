@@ -18,7 +18,7 @@
   
   ## Wall through video
   
-  [alt video](https://drive.google.com/file/d/1VfWWMCGRWavt0T4PJCbFVQPtQJMZtX8y/view)
+  [video](https://drive.google.com/file/d/1VfWWMCGRWavt0T4PJCbFVQPtQJMZtX8y/view)
   
 
   ## Features and Technology
