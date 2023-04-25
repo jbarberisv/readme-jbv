@@ -22,7 +22,7 @@
   
 
   ## Features and Technology
-  Node.js, Inquierer,FS to generate readme file into the dist folder.
+  Node.js, Inquierer, FS to generate readme file into the dist folder.
 
   
   
